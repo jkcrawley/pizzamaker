@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+}
+
+/* fonts */
+
+@font-face {
+    font-family: bonello;
+    src: url('./fonts/Bonello-Regular.rtf');
+}
+/* basic styles */
+body{
+    background-color: #BB2A0F;
+    text-align: center;
+}
+
+h1, h2{
+    font-family: bonello;
+    color: white;
+}
+
+h2{
+    background-color: #bb2a0f;
+    width: 100%;
+    text-align: left;
+}
+
+
+/* sections and divs */
+main{
+    width: 80%;
+    height: auto;
+    display: flex;
+    background-color:white;
+    border-radius: 15px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.ingredients{
+    width: 400px;
+    height: auto;
+    text-align: center;
+}
+
+.selections{
+    width: 400px;
+    height: auto;
+    border: 1px solid #BB2A0F;
+}
