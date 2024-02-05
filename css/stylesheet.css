@@ -23,12 +23,22 @@ h2{
     background-color: #bb2a0f;
     width: 100%;
     text-align: left;
+    margin-top: 0px;
+    padding: 10px;
 }
 
+p{
+    padding: 0px 10px;
+    font-family: lato;
+    text-align: left;
+}
 
+a{
+    font-family: lato;
+}
 /* sections and divs */
 main{
-    width: 80%;
+    width: 70%;
     height: auto;
     display: flex;
     background-color:white;
@@ -36,16 +46,194 @@ main{
     margin: 0 auto;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
 }
 
 .ingredients{
-    width: 400px;
+    width: 520px;
     height: auto;
-    text-align: center;
 }
 
 .selections{
-    width: 400px;
+    width: 420px;
     height: auto;
     border: 1px solid #BB2A0F;
+    margin: 20px;
 }
+
+.pizza-total{
+    text-align: center;
+    width: 300px;
+    border: 1px solid #BB2A0F;
+    margin-top: 20px;
+}
+
+/* pizza size selector */
+
+.pizza-size{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.pizza-btn{
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+}
+
+.small{
+    background-color: #ADD8E6;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.medium{
+    background-color: #ADD8E6;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.large{
+    background-color: #ADD8E6;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+#small:target{
+    background-color: #0000ff;
+    color: white;
+}
+
+#medium:target{
+    background-color: #0000ff;
+    color: white;
+}
+
+#large:target{
+    background-color: #0000ff;
+    color: white;
+}
+
+
+
+
+/* cheese selection */
+
+label{
+    cursor: pointer;
+}
+
+
+
+
+/* pizza image */
+.pizza-img{
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    background-image: url('../images/crust.png');
+    background-size: cover;
+}
+
+.blackolive{
+    background-image: url('../images/blackolive.png');
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    background-size: cover;
+    display: none;
+}
+
+.canadianbacon{
+    background-image: url('../images/canadianbacon.png');
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    background-size: cover;
+    display: none;
+}
+
+.chicken{
+    background-image: url('../images/chicken.png');
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    background-size: cover;
+    display: none;
+}
+
+.greenolive{
+    background-image: url('../images/greenolive.png');
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    background-size: cover;
+    display: none;
+}
+
+.jalopenopeppers{
+    background-image: url('../images/jalopenopeppers.png');
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    background-size: cover;
+    display: none;
+}
+
+.onion{
+    background-image: url('../images/onion.png');
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    background-size: cover;
+    display: none;
+}
+
+.pepperoni{
+    background-image: url('../images/pepperoni.png');
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    background-size: cover;
+    display: none;
+}
+
+.sausage{
+    background-image: url('../images/sausage.png');
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    background-size: cover;
+    display: none;
+}
+
+.tomato{
+    background-image: url('../images/tomato.png');
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    background-size: cover;
+    display: none;
+}
+

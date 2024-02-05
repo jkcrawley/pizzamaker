@@ -2,16 +2,122 @@
 <head>
     <title>Pizza Maker</title>
     <link href="./css/stylesheet.css" rel="stylesheet" />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
 </head>
-<body>
+<body onload="totalFunc()">
 <h1>Pizza Maker</h1>
 <main>
     <section class="ingredients">
             <div class="selections">
                 <h2>1. Size</h2>
+                <p>Select a size:</p>
+                <div class="pizza-size">
+                        <a class="pizza-btn" href="#small" onclick="smallPizza()">
+                            <div class="small" id="small">
+                                10&ldquo;
+                            </div>
+                            <b>Small</b>
+                        </a>
+
+                        <a class="pizza-btn" href="#medium" onclick="mediumPizza()">
+                            <div class="medium" id="medium">
+                                12&ldquo;
+                            </div>
+                            <b>Medium</b>
+                        </a>
+
+                        <a class="pizza-btn" href="#large" onclick="largePizza">
+                            <div class="large" id="large">
+                                14&ldquo;
+                            </div>
+                            <b>Large</b>
+                        </a>
+                </div>
+            </div>
+
+            <div class="selections">
+                <h2>2. Cheese</h2>
+                <p>
+                    <span style="background-color: #ADD8E6; padding: 10px; margin: 3px;">
+                    <input type="radio" name="cheese" id="no-cheese" value="no-cheese">
+                    <label for="no-cheese">None</label>
+                    </span>
+
+                    <span style="background-color: #ADD8E6; padding: 10px; margin: 3px;">
+                    <input type="radio" name="cheese" class="cheese-select" id="light" value="light">
+                    <label for="light">Light</label>
+                    </span>
+
+                    <span style="background-color: #ADD8E6; padding: 10px; margin: 3px;">
+                        <input type="radio" name="cheese" class="cheese-select" id="normal" value="'normal" />
+                        <label for="normal">Normal</label>
+                    </span>
+
+                    <span style="background-color: #ADD8E6; padding:10px; margin: 3px;">
+                        <input type="radio" name="cheese" class="cheese-select" id="extra" value="extra" />
+                        <label for="extra">Extra</label>
+                    </span> 
+                </p>
+            </div>
+
+            <div class="selections">
+                <h2>3. Toppings</h2>
+                <p>
+                    <input type="checkbox" name="pizza" id="blackolive" value="blackolive" onclick="blackOlive()">
+                    <label for="blackolive">Black Olives</label><br />
+
+                    <input type="checkbox" name="pizza" id="greenolive" value="greenolive" onclick="greenOlive()">
+                    <label for="greenolive">Green Olives</label><br />
+
+                    <input type="checkbox" name="pizza" id="canadianbacon" value="canadianbacon">
+                    <label for="canadianbacon">Canadian Bacons</label><br />
+
+                    <input type="checkbox" name="pizza" id="chicken" value="chicken">
+                    <label for="chicken">Grilled Chicken</label><br />
+
+                    <input type="checkbox" name="pizza" id="jalopenopeppers" value="jalopenopeppers">
+                    <label for="jalopenopeppers">Jalopeno Peppers</label><br />
+
+                    <input type="checkbox" name="pizza" id="onion" value="onion">
+                    <label for="onion">Onion</label><br />
+
+                    <input type="checkbox" name="pizza" id="pepperoni" value="pepperoni">
+                    <label for="pepperoni">Pepperoni</label><br />
+
+                    <input type="checkbox" name="pizza" id="sausage" value="sausage">
+                    <label for="sausage">Sausage</label><br />
+
+                    <input type="checkbox" name="pizza" id="tomato" value="tomato">
+                    <label for="tomato">Tomatoes</label><br />
+                </p>
             </div>
     </section>
-    <section class="'pizza"></section>
+    <section class="pizza-total">
+        <span style="position: sticky;">
+        <div class="pizza-img">
+            <div class="blackolive"></div>
+            <div class="canadianbacon"></div>
+            <div class="chicken"></div>
+            <div class="greenolive"></div>
+            <div class="jalopenopeppers"></div>
+            <div class="onion"></div>
+            <div class="pepperoni"></div>
+            <div class="sausage"></div>
+            <div class="tomato"></div>
+        </div>
+            <ul id="itemList">
+                    
+            </ul>
+            <p><b>Total:<span id="total">
+                
+            </span></b></p>
+        </span>
+    </section>
 </main>
 </body>
+<script src="./scripts/main.js"></script>
 </html>
