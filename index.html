@@ -16,21 +16,21 @@
                 <h2>1. Size</h2>
                 <p>Select a size:</p>
                 <div class="pizza-size">
-                        <a class="pizza-btn" href="#small" onclick="smallPizza()">
+                        <a class="pizza-btn" href="#small" onclick="totalFunc('small', '0');">
                             <div class="small" id="small">
                                 10&ldquo;
                             </div>
                             <b>Small</b>
                         </a>
 
-                        <a class="pizza-btn" href="#medium" onclick="mediumPizza()">
+                        <a class="pizza-btn" href="#medium" onclick="totalFunc('medium', '0');">
                             <div class="medium" id="medium">
                                 12&ldquo;
                             </div>
                             <b>Medium</b>
                         </a>
 
-                        <a class="pizza-btn" href="#large" onclick="largePizza">
+                        <a class="pizza-btn" href="#large" onclick="totalFunc('large', '0')">
                             <div class="large" id="large">
                                 14&ldquo;
                             </div>
@@ -67,7 +67,7 @@
             <div class="selections">
                 <h2>3. Toppings</h2>
                 <p>
-                    <input type="checkbox" name="pizza" id="blackolive" value="blackolive" onclick="blackOlive()">
+                    <input type="checkbox" name="pizza" id="blackolive" value="blackolive" onclick="blackOlive(); totalFunc();">
                     <label for="blackolive">Black Olives</label><br />
 
                     <input type="checkbox" name="pizza" id="greenolive" value="greenolive" onclick="greenOlive()">
@@ -91,7 +91,7 @@
                     <input type="checkbox" name="pizza" id="sausage" value="sausage" onclick="sausage()">
                     <label for="sausage">Sausage</label><br />
 
-                    <input type="checkbox" name="pizza" id="tomato" value="tomato" onclick="tomato()">
+                    <input type="checkbox" name="pizza" id="tomato" value="tomato" onclick="tomato(); totalFunc('', '.50');">
                     <label for="tomato">Tomatoes</label><br />
                 </p>
             </div>

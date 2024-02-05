@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: bonello;
-    src: url('./fonts/Bonello-Regular.rtf');
+    src: url('../fonts/Bonello-Regular.otf');
 }
 /* basic styles */
 body{
@@ -17,6 +17,7 @@ body{
 h1, h2{
     font-family: bonello;
     color: white;
+    font-weight: normal;
 }
 
 h2{
