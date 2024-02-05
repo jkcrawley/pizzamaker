@@ -237,3 +237,24 @@ label{
     display: none;
 }
 
+@media only screen and (min-width: 320px) and (max-width:480px){
+    main{
+        width: 320px;
+        margin: 0;
+        padding: 0px;
+
+    }
+    section{
+        width: 100%;
+        padding: 0;
+    }
+    .ingredients{
+        width: 100%;
+        margin: 0;
+    }
+    .selections{
+        width: 320px;
+        margin: 0px;
+    }
+
+}
