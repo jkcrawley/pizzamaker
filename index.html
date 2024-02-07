@@ -43,25 +43,33 @@
                 <div class="blocker"></div>
                 <h2>2. Cheese</h2>
                 <p>
-                    <span style="background-color: #ADD8E6; padding: 10px; margin: 3px;">
-                    <input type="radio" name="cheese" id="no-cheese" value="no-cheese" onclick="cheese(0);">
-                    <label for="no-cheese">None</label>
-                    </span>
+                    <label for="no-cheese">
+                        <span class="cheese-select" style="background-color: #ADD8E6; padding: 10px; margin: 3px;">
+                            <input type="radio" name="cheese" id="no-cheese" value="no-cheese" onclick="cheese('none'); totalFunc();">
+                            None
+                        </span>
+                    </label>
 
-                    <span style="background-color: #ADD8E6; padding: 10px; margin: 3px;">
-                    <input type="radio" name="cheese" class="cheese-select" id="light" value="light"  onclick="cheese(0);">
-                    <label for="light">Light</label>
-                    </span>
+                    <label for="light">
+                        <span class="cheese-select" style="background-color: #ADD8E6; padding: 10px; margin: 3px;">
+                            <input type="radio" name="cheese" id="light" value="light"  onclick="cheese('none'); totalFunc()">
+                            Light
+                        </span>
+                    </label>
 
-                    <span style="background-color: #ADD8E6; padding: 10px; margin: 3px;">
-                        <input type="radio" name="cheese" class="cheese-select" id="normal" value="'normal"  onclick="cheese(0);"/>
-                        <label for="normal">Normal</label>
-                    </span>
-
-                    <span style="background-color: #ADD8E6; padding:10px; margin: 3px;">
-                        <input type="radio" name="cheese" class="cheese-select" id="extra" value="extra"  onclick="cheese(.25); totalFunc();"/>
-                        <label for="extra">Extra</label>
-                    </span> 
+                    <label for="normal">
+                        <span class="cheese-select" style="background-color: #ADD8E6; padding: 10px; margin: 3px;">
+                            <input type="radio" name="cheese" id="normal" value="'normal"  onclick="cheese('none'); totalFunc()"/>
+                            Normal
+                        </span>
+                    </label>
+                    
+                    <label for="extra">
+                        <span class="cheese-select" style="background-color: #ADD8E6; padding:10px; margin: 3px;">
+                            <input type="radio" name="cheese" id="extra" value="extra"  onclick="cheese('extra'); totalFunc();"/>
+                            Extra
+                        </span>
+                    </label> 
                 </p>
             </div>
 
@@ -111,6 +119,7 @@
             <div class="tomato"></div>
         </div>
             <p><span id="pizza-size"></span></p>
+            <p><span id="extra-cheese"></span></p>
             <p><span id="itemList"></span></p>
             <p><b>Total:<span id="total">
                 
