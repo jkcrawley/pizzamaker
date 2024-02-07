@@ -5,8 +5,8 @@
 - added prices and calcations
 
 ## WIP
--Unable to remove extra cheese price after being selected
--Extra cheese won't display on price listing html. 
+- Unable to remove extra cheese price after being selected
+- Extra cheese won't display on price listing html. 
 
 
 # Version 0.2
