@@ -1,3 +1,10 @@
+# Version 1.0
+
+## Completed
+- Added functionality that prevents user from selecting topping or cheese without selecting pizza size
+- Fixed all display regarding ingredients and cheese
+- App is fully functional!
+
 # Version 0.3
 
 ## Completed
