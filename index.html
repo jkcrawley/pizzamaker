@@ -16,21 +16,21 @@
                 <h2>1. Size</h2>
                 <p>Select a size:</p>
                 <div class="pizza-size">
-                        <a class="pizza-btn" href="#small" onclick="totalFunc('small', '0');">
+                        <a class="pizza-btn" href="#small" onclick="pizzaSize('Small', 8.99); totalFunc();">
                             <div class="small" id="small">
                                 10&ldquo;
                             </div>
                             <b>Small</b>
                         </a>
 
-                        <a class="pizza-btn" href="#medium" onclick="totalFunc('medium', '0');">
+                        <a class="pizza-btn" href="#medium" onclick="pizzaSize('Medium', 12.99); totalFunc();">
                             <div class="medium" id="medium">
                                 12&ldquo;
                             </div>
                             <b>Medium</b>
                         </a>
 
-                        <a class="pizza-btn" href="#large" onclick="totalFunc('large', '0')">
+                        <a class="pizza-btn" href="#large" onclick="pizzaSize('Large', 16.99); totalFunc();">
                             <div class="large" id="large">
                                 14&ldquo;
                             </div>
@@ -39,59 +39,60 @@
                 </div>
             </div>
 
-            <div class="selections">
+            <div class="selections" id="cheeseSelect">
+                <div class="blocker"></div>
                 <h2>2. Cheese</h2>
                 <p>
                     <span style="background-color: #ADD8E6; padding: 10px; margin: 3px;">
-                    <input type="radio" name="cheese" id="no-cheese" value="no-cheese">
+                    <input type="radio" name="cheese" id="no-cheese" value="no-cheese" onclick="cheese(0);">
                     <label for="no-cheese">None</label>
                     </span>
 
                     <span style="background-color: #ADD8E6; padding: 10px; margin: 3px;">
-                    <input type="radio" name="cheese" class="cheese-select" id="light" value="light">
+                    <input type="radio" name="cheese" class="cheese-select" id="light" value="light"  onclick="cheese(0);">
                     <label for="light">Light</label>
                     </span>
 
                     <span style="background-color: #ADD8E6; padding: 10px; margin: 3px;">
-                        <input type="radio" name="cheese" class="cheese-select" id="normal" value="'normal" />
+                        <input type="radio" name="cheese" class="cheese-select" id="normal" value="'normal"  onclick="cheese(0);"/>
                         <label for="normal">Normal</label>
                     </span>
 
                     <span style="background-color: #ADD8E6; padding:10px; margin: 3px;">
-                        <input type="radio" name="cheese" class="cheese-select" id="extra" value="extra" />
+                        <input type="radio" name="cheese" class="cheese-select" id="extra" value="extra"  onclick="cheese(.25); totalFunc();"/>
                         <label for="extra">Extra</label>
                     </span> 
                 </p>
             </div>
 
-            <div class="selections">
+            <div class="selections" id="toppingsSelect">
                 <h2>3. Toppings</h2>
                 <p>
-                    <input type="checkbox" name="pizza" id="blackolive" value="blackolive" onclick="blackOlive(); totalFunc();">
+                    <input type="checkbox" name="pizza" id="blackolive" value="blackolive" onclick="blackOlive('Black Olives', .50); totalFunc();">
                     <label for="blackolive">Black Olives</label><br />
 
-                    <input type="checkbox" name="pizza" id="greenolive" value="greenolive" onclick="greenOlive()">
+                    <input type="checkbox" name="pizza" id="greenolive" value="greenolive" onclick="greenOlive('Green Olives', .50); totalFunc();">
                     <label for="greenolive">Green Olives</label><br />
 
-                    <input type="checkbox" name="pizza" id="canadianbacon" value="canadianbacon" onclick="canadianbacon()">
-                    <label for="canadianbacon">Canadian Bacons</label><br />
+                    <input type="checkbox" name="pizza" id="canadianbacon" value="canadianbacon" onclick="cbacon('Canadian Bacon', .70); totalFunc();">
+                    <label for="canadianbacon">Canadian Bacon</label><br />
 
-                    <input type="checkbox" name="pizza" id="chicken" value="chicken" onclick="chicken()">
+                    <input type="checkbox" name="pizza" id="chicken" value="chicken" onclick="gChicken('Chicken', .70); totalFunc();">
                     <label for="chicken">Grilled Chicken</label><br />
 
-                    <input type="checkbox" name="pizza" id="jalopenopeppers" value="jalopenopeppers" onclick="jpeppers()">
+                    <input type="checkbox" name="pizza" id="jalopenopeppers" value="jalopenopeppers" onclick="jpeppers('Jalopeno Peppers', .50); totalFunc();">
                     <label for="jalopenopeppers">Jalopeno Peppers</label><br />
 
-                    <input type="checkbox" name="pizza" id="onion" value="onion" onclick="onion()">
+                    <input type="checkbox" name="pizza" id="onion" value="onion" onclick="onions('Onions', .50); totalFunc();">
                     <label for="onion">Onion</label><br />
 
-                    <input type="checkbox" name="pizza" id="pepperoni" value="pepperoni" onclick="pepperoni()">
+                    <input type="checkbox" name="pizza" id="pepperoni" value="pepperoni" onclick="pepperoniFunc('Pepperoni', .70); totalFunc();">
                     <label for="pepperoni">Pepperoni</label><br />
 
-                    <input type="checkbox" name="pizza" id="sausage" value="sausage" onclick="sausage()">
+                    <input type="checkbox" name="pizza" id="sausage" value="sausage" onclick="sausageFunc('Sausage', .70); totalFunc();">
                     <label for="sausage">Sausage</label><br />
 
-                    <input type="checkbox" name="pizza" id="tomato" value="tomato" onclick="tomato(); totalFunc('', '.50');">
+                    <input type="checkbox" name="pizza" id="tomato" value="tomato" onclick="tomatoFunc('Tomatoes', .50); totalFunc();">
                     <label for="tomato">Tomatoes</label><br />
                 </p>
             </div>
@@ -109,9 +110,8 @@
             <div class="sausage"></div>
             <div class="tomato"></div>
         </div>
-            <ul id="itemList">
-                    
-            </ul>
+            <p><span id="pizza-size"></span></p>
+            <p><span id="itemList"></span></p>
             <p><b>Total:<span id="total">
                 
             </span></b></p>

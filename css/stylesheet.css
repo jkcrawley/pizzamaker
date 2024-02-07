@@ -63,12 +63,23 @@ main{
     margin: 20px;
 }
 
+#cheeseSelect{
+    display: none;
+
+}
+
+#toppingsSelect{
+    display: none;
+}
+
 .pizza-total{
     text-align: center;
     width: 300px;
     border: 1px solid #BB2A0F;
     margin-top: 20px;
 }
+
+
 
 /* pizza size selector */
 
@@ -148,7 +159,7 @@ label{
 
 
 
-/* pizza image */
+/* pizza images */
 .pizza-img{
     width: 250px;
     height: 250px;
