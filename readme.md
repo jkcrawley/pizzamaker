@@ -7,7 +7,7 @@
 ## WIP
 - Unable to remove extra cheese price after being selected
 - Extra cheese won't display on price listing html. 
-
+- 5 Ingredients (Jalopeno peppers, Onion, Pepperoni, Sausage, Tomatos) don't have functions yet.
 
 # Version 0.2
 
